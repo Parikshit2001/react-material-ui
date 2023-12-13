@@ -1,5 +1,10 @@
 import { Typography } from '@mui/material'
 
+const styles = {
+  fontSize: 60,
+  margin: 10
+}
+
 function TypographyComponent() {
   return (
     <div>
@@ -7,11 +12,12 @@ function TypographyComponent() {
           gutterBottom
           variant='h1' 
           color='primary'
+          sx = {styles}
           >
             Heading 1
         </Typography>
         <Typography 
-          gutterBottom={'true'} 
+          gutterBottom={true}
           variant="h2"
           color={'secondary'}
           >
